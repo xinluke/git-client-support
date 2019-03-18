@@ -36,7 +36,7 @@ public class SourceTreeService {
     public void handle() throws IOException {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         // 以当前jar为基点，搜索下面全部的文件
-        Resource[] resources = resolver.getResources("file:D:/source/work/**/.git");
+        Resource[] resources = resolver.getResources("file:./**/.git");
         List<RepositoryInfo> list = Stream.of(resources)
                 .map(it -> {
                     RepositoryInfo info;
