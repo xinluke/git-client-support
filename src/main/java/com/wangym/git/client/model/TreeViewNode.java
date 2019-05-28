@@ -19,7 +19,7 @@ public class TreeViewNode {
     @XmlElement(name = "Level")
     private int level;
     @XmlElement(name = "IsExpanded")
-    private boolean isExpanded = false;
+    private boolean isExpanded = true;
     @XmlElement(name = "IsLeaf")
     private boolean isLeaf;
     @XmlElement(name = "Name")
